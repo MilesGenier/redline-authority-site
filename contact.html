@@ -33,24 +33,64 @@
   <div class="container grid2">
     <div class="card">
       <h2>Contact</h2>
-      <p class="sub">Questions before you start? Send a message.</p>
+      <p class="sub">HP Tuners & Holley EFI remote calibration inquiries.</p>
 
       <!-- SECURE FORM -->
       <form action="https://formspree.io/f/xzdadovq" method="POST">
-        
-        <input type="hidden" name="_subject" value="Redline Authority — Contact Form">
+
+        <!-- Clean subject line -->
+        <input type="hidden" name="_subject" value="Redline Authority — New Contact">
+
+        <!-- Redirect (optional if free tier allows) -->
         <input type="hidden" name="_redirect" value="https://redline-authority-site.vercel.app/">
 
         <label>Name
-          <input name="name" required />
+          <input name="Name" required autocomplete="name" />
         </label>
 
         <label>Email
-          <input type="email" name="email" required />
+          <input type="email" name="Email" required autocomplete="email" />
         </label>
 
-        <label>Message
-          <textarea name="message" rows="6" placeholder="Tell me your combo, fuel, goals, and tuning platform."></textarea>
+        <label>Vehicle
+          <input name="Vehicle" placeholder="2016 Camaro SS (LT1)" />
+        </label>
+
+        <label>Fuel
+          <select name="Fuel">
+            <option value="">Select…</option>
+            <option>Pump 91/93</option>
+            <option>E85</option>
+            <option>Flex Fuel</option>
+            <option>Race Gas</option>
+            <option>Meth</option>
+          </select>
+        </label>
+
+        <label>Key Mods
+          <input name="Mods" placeholder="Cam, headers, blower/turbo…" />
+        </label>
+
+        <label>Goal
+          <input name="Goal" placeholder="Street / Track / Power target" />
+        </label>
+
+        <label>Tuning Platform
+          <select name="Platform" required>
+            <option value="">Select…</option>
+            <option>HP Tuners</option>
+            <option>Holley EFI</option>
+          </select>
+        </label>
+
+        <label>Notes (optional)
+          <textarea
+            name="Notes"
+            rows="3"
+            maxlength="600"
+            placeholder="Any issues, codes, or special requests (max 600 characters)."
+          ></textarea>
+          <small class="hint">Keep it short and structured.</small>
         </label>
 
         <button class="btn" type="submit">Send</button>
@@ -62,9 +102,9 @@
       <ul>
         <li>Year / Make / Model / Engine</li>
         <li>Fuel type</li>
-        <li>Key mods (cam, headers, blower/turbo)</li>
-        <li>Goal (street/track/drivability)</li>
-        <li>Platform (HP Tuners, etc.)</li>
+        <li>Major modifications</li>
+        <li>Power or drivability goal</li>
+        <li>HP Tuners or Holley EFI</li>
       </ul>
 
       <div style="margin-top:14px;">
