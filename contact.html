@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Redline Authority</title>
-  <meta name="description" content="Contact Redline Authority for remote performance tuning." />
+  <meta name="description" content="Contact Redline Authority for tuning questions." />
   <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
@@ -30,18 +30,13 @@
 </header>
 
 <main class="section">
-  <div class="container grid2">
-    <div class="card">
+  <div class="container">
+    <div class="card" style="max-width:600px; margin:0 auto;">
       <h2>Contact</h2>
-      <p class="sub">HP Tuners & Holley EFI remote calibration inquiries.</p>
+      <p class="sub">General questions or pre-booking inquiries.</p>
 
-      <!-- SECURE FORM -->
       <form action="https://formspree.io/f/xzdadovq" method="POST">
-        <!-- Clean subject line -->
-        <input type="hidden" name="_subject" value="Redline Authority — New Contact">
-
-        <!-- Redirect (may be limited on free tier; ok to leave) -->
-        <input type="hidden" name="_redirect" value="https://redline-authority-site.vercel.app/">
+        <input type="hidden" name="_subject" value="Redline Authority — Contact Message">
 
         <label>Name
           <input name="Name" required autocomplete="name" />
@@ -51,45 +46,16 @@
           <input type="email" name="Email" required autocomplete="email" />
         </label>
 
-        <label>Vehicle
-          <input name="Vehicle" placeholder="2016 Camaro SS (LT1)" />
+        <label>Description
+          <textarea name="Message" rows="5" maxlength="800"
+            placeholder="Briefly describe your question or setup."></textarea>
         </label>
 
-        <label>Fuel
-          <select name="Fuel">
-            <option value="">Select…</option>
-            <option>Pump 91/93</option>
-            <option>E85</option>
-            <option>Flex Fuel</option>
-            <option>Race Gas</option>
-            <option>Meth</option>
-          </select>
-        </label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</main>
 
-        <label>Key Mods
-          <input name="Mods" placeholder="Cam, headers, blower/turbo…" />
-        </label>
-
-        <label>Goal
-          <input name="Goal" placeholder="Street / Track / Power target" />
-        </label>
-
-        <label>Tuning Platform
-          <select name="Platform" required>
-            <option value="">Select…</option>
-            <option>HP Tuners</option>
-            <option>Holley EFI</option>
-          </select>
-        </label>
-
-        <label>Notes (optional)
-          <textarea
-            name="Notes"
-            rows="3"
-            maxlength="600"
-            placeholder="Any issues, codes, or special requests (max 600 characters)."
-          ></textarea>
-          <small class="hint">Keep it short and structured.</small>
-        </label>
-
-        <button c
+<footer>
+  © <span id="y"><
