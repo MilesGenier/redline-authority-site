@@ -4,93 +4,72 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Redline Authority</title>
-  <meta name="description" content="Contact Redline Authority for remote LS/LT performance tuning." />
+  <meta name="description" content="Contact Redline Authority for remote performance tuning." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="topbar">
+<header>
   <div class="container navrow">
     <a class="brand" href="index.html">
       <img src="assets/logo.png" alt="Redline Authority logo">
       <div>
         <div class="name">Redline Authority</div>
-        <div class="tag">Remote LS / LT Performance Calibration</div>
+        <div class="tag">Driven by data, Built for performance!</div>
       </div>
     </a>
 
-    <nav class="nav">
+    <nav>
       <a class="" href="index.html">Home</a>
-      <a class="" href="intake.html">Build + Payment</a>
+      <a class="" href="remote-tuning.html">Remote Tuning</a>
       <a class="active" href="contact.html">Contact</a>
-      <a class="btn small" href="intake.html">Start</a>
     </nav>
 
-    <a class="btn small" href="intake.html">Start</a>
+    <a class="btn" href="remote-tuning.html">Start</a>
   </div>
 </header>
 
 
 <main class="section">
-  <div class="container split">
+  <div class="container grid2">
     <div class="card">
       <h2>Contact</h2>
-      <p class="sub">Send a message and I’ll get back to you.</p>
+      <p class="sub">Questions before you start? Send a message.</p>
 
-      <!-- EASY OPTION: mailto (works immediately, no setup) -->
-      <div class="notice">
-        <strong style="color:#fff;">Quick setup:</strong> This form is currently set to <code>mailto:</code> so it works immediately.
-        For a cleaner “goes to your inbox” setup on Vercel, I recommend Formspree.
-      </div>
-
-      <form action="mailto:youremail@domain.com" method="POST" enctype="text/plain">
-        <label>
-          Name
+      <form action="mailto:mgptuning@yahoo.com" method="POST" enctype="text/plain">
+        <label> Name
           <input name="name" required />
         </label>
-
-        <label>
-          Email
+        <label> Email
           <input type="email" name="email" required />
         </label>
-
-        <label>
-          Message
-          <textarea name="message" rows="6" placeholder="Tell me your combo, fuel, goals, and what you’re trying to fix."></textarea>
+        <label> Message
+          <textarea name="message" rows="6" placeholder="Tell me your combo, fuel, goals, and tuning platform."></textarea>
         </label>
-
         <button class="btn" type="submit">Send</button>
-        <div class="small">Replace <strong>youremail@domain.com</strong> with your email, or swap this to Formspree later.</div>
+        <div class="small">Replace <strong>youremail@domain.com</strong> with your email (or swap to Formspree later).</div>
       </form>
     </div>
 
     <div class="card">
-      <h3>Before you message</h3>
-      <ul class="list">
+      <h3>What to include</h3>
+      <ul>
         <li>Year / Make / Model / Engine</li>
-        <li>Fuel (93 / E85 / mix)</li>
-        <li>Key mods (cam, headers, intake, blower/turbo, injectors/pump)</li>
-        <li>Goal (street, track, roll racing, drivability, mpg)</li>
-        <li>Tuning platform (HP Tuners, etc.)</li>
+        <li>Fuel type</li>
+        <li>Key mods (cam, headers, blower/turbo)</li>
+        <li>Goal (street/track/drivability)</li>
+        <li>Platform (HP Tuners, etc.)</li>
       </ul>
 
-      <hr class="sep" />
-      <div class="notice">
-        <strong style="color:#fff;">Want to start now?</strong><br/>
-        Use the Build + Payment page to submit everything in one shot.
-      </div>
-      <div style="margin-top:12px;">
-        <a class="btn" href="intake.html">Build + Payment</a>
+      <div style="margin-top:14px;">
+        <a class="btn" href="remote-tuning.html">Go to Remote Tuning</a>
       </div>
     </div>
   </div>
 </main>
 
-<footer class="footer">
-  <div class="container footerRow">
-    <div>© <span id="y"></span> Redline Authority</div>
-    <div class="small">Remote tuning • LS / LT performance</div>
-  </div>
+<footer>
+  © <span id="y"></span> Redline Authority • Driven by data, Built for performance!
 </footer>
 
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
