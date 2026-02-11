@@ -25,14 +25,14 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <a class="btn" href="remote-tuning.html">Start</a>
+    <a class="btn" href="#intake">Start</a>
   </div>
 </header>
 
 <main class="section">
   <div class="container">
     <h2>Remote Tuning</h2>
-    <p class="sub">Simple process. Clear logs. Fast revisions.</p>
+    <p class="sub">Simple process. Clear logs. Fast revisions. <strong>HP Tuners + Holley EFI only.</strong></p>
 
     <div class="grid2">
       <div class="card">
@@ -50,81 +50,92 @@
         <ul>
           <li>Cammed NA combos</li>
           <li>Headers/intake/exhaust setups</li>
-          <li>Boosted builds (platform dependent)</li>
+          <li>Boosted builds (LS/LT)</li>
           <li>Drivability + shift behavior clean-up</li>
         </ul>
       </div>
     </div>
 
-    <div class="section">
+    <!-- PRICING -->
+    <section class="section">
+      <div class="container" style="padding:0;">
+        <h2 style="margin-bottom:10px;">Flat-Rate Pricing</h2>
+        <p class="sub" style="margin-top:0;">Pay online, then complete the intake form below.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Gen 3/4 LS — Naturally Aspirated</h3>
+            <div class="price">$450</div>
+            <ul>
+              <li>Stock / bolt-ons / cam</li>
+              <li>Drivability + WOT refinement</li>
+              <li>Remote revisions included</li>
+            </ul>
+            <a class="btn" href="YOUR_LS_NA_PAYMENT_LINK_HERE" target="_blank" rel="noopener">Pay $450</a>
+          </div>
+
+          <div class="card">
+            <h3>Gen 3/4 LS — Boosted</h3>
+            <div class="price">$550</div>
+            <ul>
+              <li>Turbo / supercharger / nitrous</li>
+              <li>Boost fueling & timing strategy</li>
+              <li>Remote revisions included</li>
+            </ul>
+            <a class="btn" href="YOUR_LS_BOOST_PAYMENT_LINK_HERE" target="_blank" rel="noopener">Pay $550</a>
+          </div>
+        </div>
+
+        <div class="grid2" style="margin-top:16px;">
+          <div class="card">
+            <h3>Gen 5 LT — Naturally Aspirated</h3>
+            <div class="price">$550</div>
+            <ul>
+              <li>Stock / bolt-ons / cam</li>
+              <li>DI fueling + torque control</li>
+              <li>Remote revisions included</li>
+            </ul>
+            <a class="btn" href="YOUR_LT_NA_PAYMENT_LINK_HERE" target="_blank" rel="noopener">Pay $550</a>
+          </div>
+
+          <div class="card">
+            <h3>Gen 5 LT — Boosted</h3>
+            <div class="price">$650</div>
+            <ul>
+              <li>Turbo / supercharger / nitrous</li>
+              <li>DI + boost calibration strategy</li>
+              <li>Remote revisions included</li>
+            </ul>
+            <a class="btn" href="YOUR_LT_BOOST_PAYMENT_LINK_HERE" target="_blank" rel="noopener">Pay $650</a>
+          </div>
+        </div>
+
+        <p style="margin-top:16px; opacity:.85;">
+          <strong>Note:</strong> Flat-rate pricing assumes a mechanically sound vehicle and a complete intake submission.
+          If the issue is hardware-related (fuel pressure, leaks, misfires, etc.), I’ll let you know before continuing.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTAKE FORM -->
+    <div class="section" id="intake">
       <div class="container" style="padding:0;">
         <div class="card">
           <h3>Build Intake</h3>
-          <p class="sub">Fill this out to get started.</p>
+          <p class="sub">Fill this out after payment to get started.</p>
 
           <!-- SECURE FORM -->
           <form action="https://formspree.io/f/xzdadovq" method="POST">
-
             <input type="hidden" name="_subject" value="Redline Authority — Remote Tuning Intake">
             <input type="hidden" name="_redirect" value="https://redline-authority-site.vercel.app/">
 
             <div class="grid2">
               <label>Name
-                <input name="name" required />
+                <input name="Name" required autocomplete="name" />
               </label>
               <label>Email
-                <input type="email" name="email" required />
+                <input type="email" name="Email" required autocomplete="email" />
               </label>
             </div>
 
-            <div class="grid2">
-              <label>Vehicle / Engine
-                <input name="vehicle" placeholder="2014 Camaro SS / L99, 6L80" />
-              </label>
-              <label>Fuel
-                <select name="fuel">
-                  <option>93</option>
-                  <option>E85</option>
-                  <option>Mix</option>
-                  <option>Race</option>
-                  <option>Other</option>
-                </select>
-              </label>
-            </div>
-
-            <label>Key Mods
-              <textarea name="mods" rows="5" placeholder="Cam specs, headers, intake, stall, blower/turbo, injectors/pumps, etc."></textarea>
-            </label>
-
-            <label>Goals / Issues
-              <textarea name="goals" rows="5" placeholder="Power goal, drivability, shift behavior, knock/IAT issues, etc."></textarea>
-            </label>
-
-            <label>Tuning Platform
-              <input name="platform" placeholder="HP Tuners (VCM Suite), etc." />
-            </label>
-
-            <label>Current File/Logs Link (optional)
-              <input name="links" placeholder="Google Drive/Dropbox link" />
-            </label>
-
-            <button class="btn" type="submit">Submit Build</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</main>
-
-<footer>
-  © <span id="y"></span> Redline Authority
-</footer>
-
-<script>
-document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+            <div class="grid
