@@ -1,40 +1,84 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Redline Authority</title>
-<link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redline Authority | Remote Performance Tuning</title>
+  <meta name="description" content="Redline Authority — Driven by data, Built for performance. Remote tuning for LS/LT platforms." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <div class="container navrow">
-    <strong>Redline Authority</strong>
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Redline Authority logo">
+      <div>
+        <div class="name">Redline Authority</div>
+        <div class="tag">Driven by data, Built for performance!</div>
+      </div>
+    </a>
+
     <nav>
       <a class="active" href="index.html">Home</a>
-      <a href="#">Remote Tuning</a>
-      <a href="#">Contact</a>
+      <a class="" href="remote-tuning.html">Remote Tuning</a>
+      <a class="" href="contact.html">Contact</a>
     </nav>
+
+    <a class="btn" href="remote-tuning.html">Start</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <img src="assets/logo.png" class="heroLogo" alt="Redline Authority Logo"/>
-    <h1>Driven by data, <span style="color:var(--accent);">Built for performance!</span></h1>
-    <p class="tagline">Remote LS / LT performance tuning built around real-world logs and safe power delivery.</p>
-  </div>
-</section>
+
+<main>
+  <section class="hero">
+    <div class="container heroCenter">
+      <img class="heroLogo" src="assets/logo.png" alt="Redline Authority">
+      <h1>Driven by data, <span style="color:var(--accent); font-weight:1000;">Built for performance!</span></h1>
+      <p class="tagline"><strong>Remote tuning</strong> focused on LS / LT platforms — clean drivability, safe power, and fast revisions.</p>
+
+      <div class="ctaRow">
+        <a class="btn" href="remote-tuning.html">Remote Tuning</a>
+        <a class="btn ghost" href="contact.html">Contact</a>
+      </div>
+
+      <div class="pills">
+        <div class="pill">HP Tuners • LS / LT Focus</div>
+        <div class="pill">NA • Cam • Boosted</div>
+        <div class="pill">Log-Based Revisions</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid2">
+      <div class="card">
+        <h3>What I do</h3>
+        <p>Remote calibration built around real-world logs — not guesswork.</p>
+        <ul>
+          <li>Base file calibrated to your exact combo</li>
+          <li>Clear logging instructions</li>
+          <li>Revisions until it’s dialed</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>What you can expect</h3>
+        <p>Consistent power with safety as the priority.</p>
+        <ul>
+          <li>Clean idle + part-throttle manners</li>
+          <li>WOT fueling and spark strategy refined</li>
+          <li>Honest feedback on limits (fuel, IAT, knock)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-© <span id="y"></span> Redline Authority
+  © <span id="y"></span> Redline Authority • Driven by data, Built for performance!
 </footer>
 
-<script>
-document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
