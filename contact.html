@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Redline Authority</title>
+  <meta name="description" content="Contact Redline Authority for remote LS/LT performance tuning." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Redline Authority logo">
+      <div>
+        <div class="name">Redline Authority</div>
+        <div class="tag">Remote LS / LT Performance Calibration</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="intake.html">Build + Payment</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a class="btn small" href="intake.html">Start</a>
+    </nav>
+
+    <a class="btn small" href="intake.html">Start</a>
+  </div>
+</header>
+
+
+<main class="section">
+  <div class="container split">
+    <div class="card">
+      <h2>Contact</h2>
+      <p class="sub">Send a message and I’ll get back to you.</p>
+
+      <!-- EASY OPTION: mailto (works immediately, no setup) -->
+      <div class="notice">
+        <strong style="color:#fff;">Quick setup:</strong> This form is currently set to <code>mailto:</code> so it works immediately.
+        For a cleaner “goes to your inbox” setup on Vercel, I recommend Formspree.
+      </div>
+
+      <form action="mailto:youremail@domain.com" method="POST" enctype="text/plain">
+        <label>
+          Name
+          <input name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Tell me your combo, fuel, goals, and what you’re trying to fix."></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send</button>
+        <div class="small">Replace <strong>youremail@domain.com</strong> with your email, or swap this to Formspree later.</div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Before you message</h3>
+      <ul class="list">
+        <li>Year / Make / Model / Engine</li>
+        <li>Fuel (93 / E85 / mix)</li>
+        <li>Key mods (cam, headers, intake, blower/turbo, injectors/pump)</li>
+        <li>Goal (street, track, roll racing, drivability, mpg)</li>
+        <li>Tuning platform (HP Tuners, etc.)</li>
+      </ul>
+
+      <hr class="sep" />
+      <div class="notice">
+        <strong style="color:#fff;">Want to start now?</strong><br/>
+        Use the Build + Payment page to submit everything in one shot.
+      </div>
+      <div style="margin-top:12px;">
+        <a class="btn" href="intake.html">Build + Payment</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footerRow">
+    <div>© <span id="y"></span> Redline Authority</div>
+    <div class="small">Remote tuning • LS / LT performance</div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

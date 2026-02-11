@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Build + Payment | Redline Authority</title>
+  <meta name="description" content="Submit your build info and pay to start remote tuning with Redline Authority." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Redline Authority logo">
+      <div>
+        <div class="name">Redline Authority</div>
+        <div class="tag">Remote LS / LT Performance Calibration</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a class="" href="index.html">Home</a>
+      <a class="active" href="intake.html">Build + Payment</a>
+      <a class="" href="contact.html">Contact</a>
+      <a class="btn small" href="intake.html">Start</a>
+    </nav>
+
+    <a class="btn small" href="intake.html">Start</a>
+  </div>
+</header>
+
+
+<main class="section">
+  <div class="container">
+    <h2>Build Info + Payment</h2>
+    <p class="sub">Submit your combo so I can build the correct base file. Then pay to lock your spot.</p>
+
+    <div class="split">
+      <div class="card">
+        <h3>Build Intake Form</h3>
+        <p class="small">This is set up as a simple form you can easily swap to Formspree later (recommended).</p>
+
+        <!-- Replace the action with Formspree later -->
+        <form action="mailto:youremail@domain.com" method="POST" enctype="text/plain">
+          <label>
+            Name
+            <input name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <div class="split" style="grid-template-columns:1fr 1fr;">
+            <label>
+              Vehicle / Engine
+              <input name="vehicle" placeholder="2014 Camaro SS / L99, 6L80" />
+            </label>
+
+            <label>
+              Fuel
+              <select name="fuel">
+                <option>93</option>
+                <option>E85</option>
+                <option>Mix</option>
+                <option>Race</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Key Mods
+            <textarea name="mods" rows="5" placeholder="Cam specs, headers, intake, stall, blower/turbo, injectors/pumps, etc."></textarea>
+          </label>
+
+          <label>
+            Goals / Issues
+            <textarea name="goals" rows="5" placeholder="Power goal, drivability, shift behavior, knock/IAT issues, etc."></textarea>
+          </label>
+
+          <label>
+            Tuning Platform
+            <input name="platform" placeholder="HP Tuners (VCM Suite), etc." />
+          </label>
+
+          <label>
+            Current File + Logs Link (optional)
+            <input name="links" placeholder="Google Drive/Dropbox link" />
+          </label>
+
+          <button class="btn" type="submit">Submit Build</button>
+          <div class="small">Replace <strong>youremail@domain.com</strong> with your email OR swap to Formspree for a clean inbox workflow.</div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Payment</h3>
+        <p class="sub">Keep this simple: link your payment buttons below.</p>
+
+        <div class="notice">
+          <strong style="color:#fff;">Recommended:</strong> Use Stripe Payment Links (clean + professional).<br/>
+          Or add PayPal / Cash App links.
+        </div>
+
+        <hr class="sep" />
+
+        <div style="display:grid; gap:12px;">
+          <!-- Replace these hrefs with your real payment links -->
+          <a class="btn" href="#" target="_blank" rel="noopener">Pay: Remote Tune Package</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">Pay: Data Review / Diagnostics</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">Pay: Revision Only</a>
+        </div>
+
+        <hr class="sep" />
+
+        <div class="notice">
+          <strong style="color:#fff;">After payment:</strong><br/>
+          You’ll receive your base file + logging instructions. Turnaround depends on queue and log quality.
+        </div>
+
+        <p class="small" style="margin-top:12px;">
+          Want me to wire this page to Stripe links + Formspree so everything works end-to-end? Tell me what payment method you want.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footerRow">
+    <div>© <span id="y"></span> Redline Authority</div>
+    <div class="small">Remote tuning • LS / LT performance</div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
