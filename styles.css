@@ -1,6 +1,6 @@
 
 :root{
-  --bg:#04050a;
+  --bg:#05060a;
   --accent:#ff1e2d;
   --text:#e8eaf0;
   --muted:#a7adbd;
@@ -9,20 +9,20 @@
 }
 
 *{box-sizing:border-box}
-
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
   color:var(--text);
-  background: linear-gradient(180deg,#04050a,#020208);
-  overflow-x:hidden;
+  background:
+    radial-gradient(900px 500px at 50% 20%, rgba(255,30,45,.12), transparent 70%),
+    linear-gradient(180deg, #05060a, #030309);
 }
 
 .container{width:min(var(--max),92%); margin:0 auto}
 
 header{
   backdrop-filter: blur(8px);
-  background: rgba(4,5,10,.75);
+  background: rgba(5,6,10,.75);
   border-bottom:1px solid var(--line);
   position:sticky; top:0;
 }
@@ -38,40 +38,30 @@ nav a:hover{color:var(--text); background:rgba(255,255,255,.05)}
 nav a.active{color:#fff; background:rgba(255,30,45,.15)}
 
 .hero{
-  padding:100px 0 80px;
+  padding:80px 0 60px;
   text-align:center;
   position:relative;
 }
 
-.heroGlow{
+.hero::before{
+  content:"";
   position:absolute;
-  top:50%;
-  left:50%;
-  width:900px;
-  height:900px;
-  transform:translate(-50%,-50%);
-  background: radial-gradient(circle, rgba(255,30,45,.4) 0%, rgba(255,30,45,.15) 35%, transparent 70%);
-  filter: blur(120px);
-  animation: pulseGlow 4s ease-in-out infinite;
+  inset:0;
+  background:radial-gradient(circle at center, rgba(255,30,45,.08), transparent 60%);
   z-index:0;
-}
-
-@keyframes pulseGlow{
-  0%{ opacity:.6; transform:translate(-50%,-50%) scale(1); }
-  50%{ opacity:1; transform:translate(-50%,-50%) scale(1.15); }
-  100%{ opacity:.6; transform:translate(-50%,-50%) scale(1); }
 }
 
 .heroLogo{
   width:min(1000px,95%);
   position:relative;
   z-index:1;
+  mix-blend-mode:lighten;
   opacity:.95;
 }
 
 h1{
-  margin:30px 0 10px;
-  font-size:clamp(30px,4vw,50px);
+  margin:20px 0 10px;
+  font-size:clamp(28px,4vw,48px);
 }
 
 .tagline{
