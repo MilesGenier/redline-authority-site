@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Redline Authority</title>
   <meta name="description" content="Contact Redline Authority for remote performance tuning." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
 
@@ -20,8 +20,8 @@
     </a>
 
     <nav>
-      <a class="" href="index.html">Home</a>
-      <a class="" href="remote-tuning.html">Remote Tuning</a>
+      <a href="index.html">Home</a>
+      <a href="remote-tuning.html">Remote Tuning</a>
       <a class="active" href="contact.html">Contact</a>
     </nav>
 
@@ -29,25 +29,31 @@
   </div>
 </header>
 
-
 <main class="section">
   <div class="container grid2">
     <div class="card">
       <h2>Contact</h2>
       <p class="sub">Questions before you start? Send a message.</p>
 
-      <form action="mailto:youremail@domain.com" method="POST" enctype="text/plain">
-        <label> Name
+      <!-- SECURE FORM -->
+      <form action="https://formspree.io/f/xzdadovq" method="POST">
+        
+        <input type="hidden" name="_subject" value="Redline Authority — Contact Form">
+        <input type="hidden" name="_redirect" value="https://redline-authority-site.vercel.app/">
+
+        <label>Name
           <input name="name" required />
         </label>
-        <label> Email
+
+        <label>Email
           <input type="email" name="email" required />
         </label>
-        <label> Message
+
+        <label>Message
           <textarea name="message" rows="6" placeholder="Tell me your combo, fuel, goals, and tuning platform."></textarea>
         </label>
+
         <button class="btn" type="submit">Send</button>
-        <div class="small">Replace <strong>youremail@domain.com</strong> with your email (or swap to Formspree later).</div>
       </form>
     </div>
 
@@ -72,6 +78,9 @@
   © <span id="y"></span> Redline Authority • Driven by data, Built for performance!
 </footer>
 
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
