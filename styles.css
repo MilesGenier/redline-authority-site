@@ -252,6 +252,11 @@ footer{
   font-size:13px;
   text-align:center;
 }
+
+/* ================================
+   TESTIMONIALS / REVIEWS
+=================================== */
+
 .review-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
@@ -264,10 +269,11 @@ footer{
   border:1px solid rgba(255,255,255,.10);
   border-radius: var(--radius);
   padding:18px;
-  transition:.25s ease;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
 .review-card:hover{
+  transform: translateY(-2px);
   border-color: rgba(255,30,45,.35);
   box-shadow: 0 10px 35px rgba(255,30,45,.12);
 }
@@ -297,4 +303,47 @@ footer{
 .testimonial-section h2{
   font-size:24px;
   letter-spacing:.5px;
+}
+
+/* ================================
+   CUSTOMER PHOTOS (BOTTOM SECTION)
+   Matches your theme + hover glow
+=================================== */
+
+.customer-photo-section{
+  margin-top:60px;
+  padding-top:10px;
+}
+
+.customer-photo-grid{
+  margin-top:18px;
+  display:grid;
+  gap:16px;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.customer-photo-grid img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.02);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.customer-photo-grid img:hover{
+  transform: scale(1.02);
+  border-color: rgba(255,30,45,.28);
+  box-shadow: 0 14px 34px rgba(255,30,45,.18);
+}
+
+/* Mobile tightening */
+@media (max-width:520px){
+  .review-grid{
+    grid-template-columns:1fr;
+  }
+  .customer-photo-grid img{
+    height:170px;
+  }
 }
