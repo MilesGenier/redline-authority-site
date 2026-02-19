@@ -206,9 +206,43 @@ h1{
   gap:14px;
 }
 
+/* ✅ FIXED MOBILE HEADER:
+   Previously nav was display:none, so your links disappeared on phones.
+   Now we keep nav visible and make the header stack nicely. */
 @media (max-width: 900px){
-  nav{display:none}
+  .navrow{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    gap: 10px;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+  }
+
+  .brand{
+    justify-content:center;
+  }
+
   .grid2{grid-template-columns:1fr}
+}
+
+/* Extra tightening for small phones */
+@media (max-width: 520px){
+  nav a{
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+
+  .brand .tag{
+    text-align:center;
+  }
 }
 
 .card{
