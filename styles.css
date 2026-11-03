@@ -367,3 +367,17 @@ footer{
   font-size:13px;
   text-align:center;
 }
+/* Hero image only. All original header styles preserved. */
+.approvedHero{position:relative;width:100%;line-height:0;overflow:hidden}
+.approvedHero img{display:block;width:100%;height:auto}
+.approvedHeroLink{position:absolute;left:29.5%;top:80%;width:34%;height:12%;display:block}
+.approvedHeroLink:focus-visible{outline:3px solid #fff;outline-offset:-3px}
+
+/* Approved header wordmark and compact navigation; other site styles retained */
+.approvedSiteHeader{background:#050505;border-bottom:2px solid #cf1020;backdrop-filter:none}
+.approvedSiteHeader .navrow{width:min(1560px,94%);padding:4px 0;min-height:82px;gap:20px}
+.approvedSiteHeader .brand img{width:300px;height:auto;max-width:32vw;object-fit:contain;border:0;border-radius:0}
+.approvedSiteHeader nav{gap:clamp(6px,2vw,30px);flex-wrap:wrap;justify-content:flex-end}
+.approvedSiteHeader nav a{font-size:clamp(13px,1.3vw,18px);color:#f5f5f5;border:0;border-radius:0;background:none;padding:8px 4px;font-weight:500}
+.approvedSiteHeader nav a:hover{color:#ff3545;background:none}
+@media(max-width:690px){.approvedSiteHeader .navrow{flex-direction:column;gap:3px}.approvedSiteHeader .brand img{max-width:80vw;width:250px}.approvedSiteHeader nav{justify-content:center;gap:7px}.approvedSiteHeader nav a{font-size:12px;padding:4px}}
