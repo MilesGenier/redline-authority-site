@@ -201,10 +201,7 @@ h1{
   gap:18px;
 }
 
-/* Hide top nav only on mobile */
-@media (max-width: 900px){
-  nav{ display:none; }
-}
+/* Keep navigation visible on mobile; approved header handles responsive layout. */
 
 .card{
   background: rgba(15,17,23,.70);
